@@ -145,7 +145,7 @@ form
     
 }
 #fb {
-    content: url(./Img/fb.png);
+    content: url(fb.png);
     width: 32px;
     height: 32px;
     position: relative;
@@ -154,7 +154,7 @@ form
   
 #ig
 {
-content: url(./Img/Ig.png);
+content: url(Ig.png);
 width: 32px;
 height: 32px;
 position: relative;
@@ -163,7 +163,7 @@ top: 5px; }
 
 #call::before
 {
-content: url(./Img/call.png);
+content: url(call.png);
 width: 32px;
 height: 32px;
 position: relative;
@@ -171,7 +171,7 @@ left: -3px;
 top: 5px; }
 #mail::before
 {
-    content: url(./Img/email.png);
+    content: url(email.png);
     width: 32px;
     height: 32px;
     position: relative;
