@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background:   linear-gradient(to bottom, #405166 0%,#656f6f 100%);
+   
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+    padding-top: 10px;
+}
+.nav-links {
+    justify-content: space-around;
+    display: flex;
+    width: 35%;
+}
+.nav-links li {
+    list-style: none;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #b6b6b6f5;
+
+}
+    .burger{
+        display: none;
+        cursor: pointer
+}
+.burger div {
+    width: 24px;
+    height: 3px;
+    background-color: #c5c5c5;
+    margin: 5px;
+    
+}
+.presentation {
+    display:flex;
+    width: 82%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introuduction{
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #45a2faf5;
+    animation: drop 1.2s ease;
+}
+
+.intro-text p {
+    
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: lighter;
+    opacity: 1;
+}
+.cta {
+    padding: 40px 0px 0px 0px ;
+}
+#cta-add {
+    border: 2px solid #45a2faf5;
+    border-radius: 25px;
+    background: #45a2faf5;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    transform: scale(1);
+    transition-duration: 0.6s;
+    
+    
+}
+#cta-add:hover{
+   
+    box-shadow: 0px 10px 14px -6px  #45a2faf5;
+    transform: scale(1.12);
+    
+}
+
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    padding-top: 40px;
+    
+}
+
+.cover img {
+    height: 100%;
+    animation: drop 1.2s ease;
+    cursor: pointer; 
+    transform: scale(1);
+    transition-duration: 0.8s;
+    
+}
+
+.cover img:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 0px 8px 4px #fffffff5;
+
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.resau {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    padding: 10px;
+    margin-top: 20px;
+  
+}
+
+
+#fb {
+        content: url(./Img/fb.png);
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left: -3px;
+        top: 5px; }
+      
+#ig
+{
+    content: url(./Img/Ig.png);
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: -3px;
+    top: 5px; }
+
+    #call
+{
+    content: url(./Img/call.png);
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: -3px;
+    top: 5px; }
+
+    #mail
+    {
+        content: url(./Img/email.png);
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left: -3px;
+        top: 5px; }
+
+@media screen and (max-width: 1024px) {
+    
+	
+	.introuduction {
+		margin-top: 5vh;
+		
+	}
+	.intro-text h1 {
+		font-size: 50px;
+        z-index: -1;
+	}
+	.intro-text p {
+		font-size: 22px;
+        z-index: -1;
+	}
+
+	.cover img {
+		height: 70%;
+	}
+	
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    body{
+        overflow-x: hidden;
+    }
+    .presentation {
+		flex-direction: column;
+        
+	}
+    
+    .intro-text h1 {
+		font-size: 35px;
+       
+	}
+	.intro-text p {
+		font-size: 18px;
+      
+	}
+
+    .introuduction {
+		margin-top: 5vh;
+        text-align: center;
+    }
+    .cover img {
+		height: 77%;
+         
+	}
+    .resau {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background:   linear-gradient(to bottom, #425266 0%,#656f6f 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+    z-index: 2000; }
+        .nav-links li {
+            opacity: 1;
+        }
+        .burger {
+            display: block;
+        }
+}
+        
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
