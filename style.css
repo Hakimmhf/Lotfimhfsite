@@ -7,7 +7,6 @@
 body {
     font-family: 'poppins', sans-serif;
     background: #1a1a1a;
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -206,7 +205,7 @@ top: 5px; }
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background:   linear-gradient(to bottom, #425266 0%,#656f6f 100%);
+        background: #1a1a1a;
         display: flex;
         flex-direction: column;
         align-items: center;
